@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Slidercontainer from "./components/Slidercontainer";
+import { useContext, useState } from "react";
+import { Context } from "./context/Context";
 
 function App() {
+  //tommorow task is to check how to pass data from child to parent
+
+  // const [color, setColor] = useState({ red: 0, green: 0, blue: 0 });
+  // const handleCallback = (childData) => {
+  //   setColor({ name: childData });
+  // };
+
+  // const {red,green,blue} = color;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Slidercontainer />
     </div>
   );
 }
